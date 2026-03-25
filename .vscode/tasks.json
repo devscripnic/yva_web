@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build: Domain",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/Domain/Domain.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build: Application",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/Application/Application.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build: Infrastructure",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/Infrastructure/Infrastructure.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build: Api",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/Api/Api.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build: All",
+            "dependsOn": [
+                "build: Domain",
+                "build: Application",
+                "build: Infrastructure",
+                "build: Api"
+            ],
+            "dependsOrder": "sequence"
+        }
+    ]
+}
