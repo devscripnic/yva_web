@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/scripnicroman/development/projects/YVA/API/API.csproj": {}
+    "/Users/scripnicroman/development/projects/YVA/Api/Api.csproj": {}
   },
   "projects": {
-    "/Users/scripnicroman/development/projects/YVA/API/API.csproj": {
+    "/Users/scripnicroman/development/projects/YVA/Api/Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/scripnicroman/development/projects/YVA/API/API.csproj",
-        "projectName": "API",
-        "projectPath": "/Users/scripnicroman/development/projects/YVA/API/API.csproj",
+        "projectUniqueName": "/Users/scripnicroman/development/projects/YVA/Api/Api.csproj",
+        "projectName": "Api",
+        "projectPath": "/Users/scripnicroman/development/projects/YVA/Api/Api.csproj",
         "packagesPath": "/Users/scripnicroman/.nuget/packages/",
-        "outputPath": "/Users/scripnicroman/development/projects/YVA/API/obj/",
+        "outputPath": "/Users/scripnicroman/development/projects/YVA/Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/scripnicroman/.nuget/NuGet/NuGet.Config"
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.1.5, )"
             }
           },
           "imports": [
