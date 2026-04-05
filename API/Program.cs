@@ -1,12 +1,12 @@
-using Microsoft.OpenApi;
+using Yva.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Register controller support
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
@@ -20,7 +20,6 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-// Connecting controller routing
 app.MapControllers();
 
 
