@@ -3,8 +3,13 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+appsettings.Development.json
+appsettings.*.local.json
+
 # dotenv files
 .env
+.env.*
+*.env
 
 # User-specific files
 *.rsuser
@@ -12,6 +17,9 @@
 *.user
 *.userosscache
 *.sln.docstates
+
+*.env.local
+docker-compose.override.yml
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
