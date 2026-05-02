@@ -1,16 +1,17 @@
+namespace Infrastructure.Database;
 public class DatabaseSettings
 {
     public string Host { get; set; } = "";
     public string Database { get; set; } = "";
     public string Username { get; set; } = "";
-    public string Password { get; set; } = "!";
+    public string Password { get; set; } = "";
 
     public static DatabaseSettings FromEnvironment(string env)
     {
-        var dbHost = env == "Development" ? "DB_HOST" : "DB_HOST";
-        var dbDatabaseName = env == "Development" ? "DB_NAME" : "DB_NAME";
-        var dbUserKey = env == "Development" ? "DB_ADMIN_USER" : "DB_APP_USER";
-        var dbUserPassword = env == "Development" ? "DB_ADMIN_PASSWORD" : "DB_APP_PASSWORD";
+        var dbHost = "DB_HOST";
+        var dbDatabaseName = "DB_NAME";
+        var dbUserKey = "DB_USER";
+        var dbUserPassword = "DB_PASSWORD";
 
         return new DatabaseSettings
         {
